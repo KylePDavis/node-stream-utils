@@ -12,10 +12,22 @@ exports
 
 Examples
 --------
+Here's a simple and somewhat contrived example of how you might use the through stream helper to apply a math operation.
 ``` js
 var su = require("stream-utils");
 
+var inputs = [1, 2, 3],
+  outputs = [],
+  doubler = su.through(function(val){ // on data queue doubled value
+    this.queue(val * 2);
+  })
+    .on("data", function(val2){ // on data push into outputs
+      outputs.push(val2);
+    });
 
+inputs.forEach(doubler.write);
+
+// --> outputs is: [2, 4, 6]
 ```
 
 
