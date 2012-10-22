@@ -31,6 +31,12 @@ inputs.forEach(doubler.write);
 ```
 
 
+Why?
+----
+I needed a set of Stream utilities that would make it easier to build and reuse chains of complex Object stream mutators.
+Originally I used the `event-stream` package but I ran into a few issues with my use cases that drove me to roll my own solution based on what I had learned from that code.
+
+
 License
 -------
 MIT / Apache2
