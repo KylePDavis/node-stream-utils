@@ -1,14 +1,22 @@
 {
 	"name": "stream-utils",
-	"description": "Stream utilities with support for stream resets.",
-	"author": "Kyle P. Davis <kylepdavis@me.com>",
 	"version": "0.0.1",
-	"keywords": ["stream", "streams", "pipe", "utility"],
+	"description": "Stream utilities with support for stream resets.",
 	"main": "./stream-utils",
+	"author": {
+		"name": "Kyle P. Davis",
+		"email": "me@kylepdavis.com",
+		"url": "kylepdavis.com"
+	},
+	"keywords": ["stream", "streams", "pipe", "utility"],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/KylePDavis/node-stream-utils.git"
+	},
+	"homepage": "https://github.com/KylePDavis/node-stream-utils",
 	"scripts": {
 		"test": "mocha --ui exports --reporter spec --bail --recursive test/lib/"
-	},
-	"dependencies": {
 	},
 	"devDependencies": {
 		"mocha": "*",
