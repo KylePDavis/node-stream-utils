@@ -13,7 +13,7 @@ exports
 Examples
 --------
 Here's a simple and somewhat contrived example of how you might use the through stream helper to apply a math operation.
-``` js
+```javascript
 var su = require("stream-utils");
 
 var inputs = [1, 2, 3],
