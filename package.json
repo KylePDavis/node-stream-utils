@@ -1,0 +1,17 @@
+{
+	"name": "stream-utils",
+	"description": "Stream utilities with support for stream resets.",
+	"author": "Kyle P. Davis <kylepdavis@me.com>",
+	"version": "0.0.1",
+	"keywords": ["stream", "streams", "pipe", "utility"],
+	"main": "./stream-utils",
+	"scripts": {
+		"test": "mocha --ui exports --reporter spec --bail --recursive test/lib/"
+	},
+	"dependencies": {
+	},
+	"devDependencies": {
+		"mocha": "*",
+		"stream-spec": "*"
+	}
+}
