@@ -1,6 +1,7 @@
 var assert = require("assert"),
-	through = require("../../lib/through"),
-	pipeline = require("../../lib/pipeline");
+	su = require("../../"),
+	through = su.through,
+	pipeline = su.pipeline;
 
 
 exports = module.exports = {

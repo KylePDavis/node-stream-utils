@@ -1,7 +1,8 @@
 var assert = require("assert"),
-	through = require("../../lib/through"),
-	duplex = require("../../lib/duplex"),
-	spec = require("stream-spec");
+	spec = require("stream-spec"),
+	su = require("../../"),
+	through = su.through,
+	duplex = su.duplex;
 
 
 exports = module.exports = {
