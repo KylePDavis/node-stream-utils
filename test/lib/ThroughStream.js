@@ -1,7 +1,7 @@
 var assert = require("assert"),
 	spec = require("stream-spec"),
 	su = require("../../"),
-	through = su.through;
+	through = su.ThroughStream;
 
 
 exports = module.exports = {

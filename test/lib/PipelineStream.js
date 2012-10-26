@@ -1,7 +1,7 @@
 var assert = require("assert"),
 	su = require("../../"),
-	through = su.through,
-	pipeline = su.pipeline;
+	through = su.ThroughStream,
+	pipeline = su.PipelineStream;
 
 
 exports = module.exports = {
