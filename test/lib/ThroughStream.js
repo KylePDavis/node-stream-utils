@@ -174,7 +174,7 @@ module.exports = {
 							for(var i = 0, l = buffer.length; i < l; i++)
 								this.queue(buffer[i]);
 							buffer.length = 0;
-                        }
+						}
 					});
 				})();
 			s.on("data", a.push.bind(a));
