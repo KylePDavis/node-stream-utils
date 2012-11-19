@@ -5,7 +5,7 @@ var assert = require("assert"),
 	duplex = su.DuplexStream;
 
 
-exports = module.exports = {
+module.exports = {
 
 	"duplex": {
 
@@ -42,4 +42,4 @@ exports = module.exports = {
 };
 
 
-if(!module.parent) (new (require("mocha"))()).ui("exports").reporter("spec").addFile(__filename).run();
+if (!module.parent)(new(require("mocha"))()).ui("exports").reporter("spec").addFile(__filename).run(process.exit);

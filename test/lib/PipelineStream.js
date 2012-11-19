@@ -4,7 +4,7 @@ var assert = require("assert"),
 	pipeline = su.PipelineStream;
 
 
-exports = module.exports = {
+module.exports = {
 
 	"pipeline": {
 
@@ -108,4 +108,4 @@ exports = module.exports = {
 };
 
 
-if(!module.parent) (new (require("mocha"))()).ui("exports").reporter("spec").addFile(__filename).run();
+if (!module.parent)(new(require("mocha"))()).ui("exports").reporter("spec").addFile(__filename).run(process.exit);
